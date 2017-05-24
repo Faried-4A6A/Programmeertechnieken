@@ -1,0 +1,13 @@
+body{
+    color: aliceblue;
+    margin-top: 15%;
+}
+.circle{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 100px;
+}
