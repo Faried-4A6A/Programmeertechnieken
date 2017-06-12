@@ -8,7 +8,9 @@ function showOnce(){
 setTimeout(showOnce, 10);
 
 var counter = 0;
-var setIntervalId = setInterval(function(){
+var setIntervalId = setInterval(dinges,100);
+
+function dinges(){
 
     counter += 1;
     if(counter == 100){
@@ -18,4 +20,4 @@ var setIntervalId = setInterval(function(){
         document.getElementById("mbody").style.color = 'black';
 
     }
-},100);
+}
