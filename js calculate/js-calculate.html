@@ -3,29 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Calculate</title>
-    
-    <!-- Better to use external stylesheet. -->
-    <style>
-        body {
-            font-family: Tahoma, Geneva, sans-serif;
-        }
-        
-        label {
-            display: inline-block;
-            width: 120px;
-        }
-        
-        .result {
-            padding: 1em;
-            background-color: #333;
-            color: #ccc;
-        }
-        
-        #result {
-            font-size: 120%;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Calculate</h1>           
@@ -68,27 +46,6 @@
     </pre>
       
     <!-- JavaScript - better to put code in external JS file -->    
-    <script>
-        function reken(){
-            var getal = document.getElementById('numbers').value;
-            var operate1 = document.getElementById('operation').value="sum";
-            var operate2 = document.getElementById('operation').value="substract";
-            var operate3 = document.getElementById('operation').value="multiply";
-            var operate4 = document.getElementById('operation').value="divide";
-            
-            var uitslag = getal.split(",");
-            
-            var output = parseFloat(uitslag[0]);
-            
-            if(operate1){
-                for(i=1; i<uitslag.length; i++){
-                   output+=parseFloat(uitslag[0]); 
-                };
-            }
-            
-            document.getElementById('result').innerHTML = output;
-        }
-        
-    </script>  
+    <script src="reken.js" type="text/javascript"></script>  
 </body>
 </html>
