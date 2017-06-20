@@ -23,6 +23,10 @@ function reken(){
         for(i=1; i<uitslag.length; i++){
             output*=parseFloat(uitslag[i]);
         }
+    }else if(operate == "divide"){
+        for(i=1; i<uitslag.length; i++){
+            output/=parseFloat(uitslag[i]);
+        }
     }
     document.getElementById("result").innerHTML = output;
 }
