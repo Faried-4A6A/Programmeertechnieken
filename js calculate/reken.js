@@ -1,19 +1,20 @@
 function reken(){
+    // "2, 5"
     var getal = document.getElementById('numbers').value;
-    var operate1 = document.getElementById('operation').value="sum";
-    var operate2 = document.getElementById('operation').value="substract";
-    var operate3 = document.getElementById('operation').value="multiply";
-    var operate4 = document.getElementById('operation').value="divide";
-            
+    
+    // operate sum
+    var operate = document.getElementById('operation').value;
+    
+    // ["2", " 5"]
     var uitslag = getal.split(",");
             
     var output = parseFloat(uitslag[0]);
-            
-    if(operate1){
+    
+    
+    if(operate == "sum"){
         for(i=1; i<uitslag.length; i++){
-            output+=parseFloat(uitslag[0]); 
-        };
+            output+=parseFloat(uitslag[i]); 
+        }
     }
-            
-    document.getElementById('result').innerHTML = output;
+    document.getElementById("result").innerHTML = output;
 }
